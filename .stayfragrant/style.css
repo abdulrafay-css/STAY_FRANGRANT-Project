@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: #111;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.dropdown a:hover {
+    color: #ff6a3d;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero span {
+    color: #ff6a3d;
+}
+
+/* ===== PRODUCT SLIDER ===== */
+.slider {
+    overflow: hidden;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.track {
+    display: flex;
+    animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ===== PRODUCT CARD ===== */
+.product {
+    width: 220px;
+    background: #111;
+    margin: 0 18px;
+    padding: 15px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.product:hover {
+    transform: translateY(-12px) scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.product h4 {
+    margin-top: 10px;
+}
+
+.product p {
+    color: #ff6a3d;
+    font-weight: bold;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #ff6a3d;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
