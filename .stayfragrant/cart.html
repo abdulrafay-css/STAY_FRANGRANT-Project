@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart | Stay Fragrant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Stay<span>FRAGRANT</span></div>
+  <a href="index.html" class="login-btn">Home</a>
+</nav>
+
+<section class="products">
+  <h2>Your Cart</h2>
+
+  <div id="cart-items"></div>
+  <h3 id="total"></h3>
+
+</section>
+
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let container = document.getElementById("cart-items");
+  let total = 0;
+
+  cart.forEach(item=>{
+    container.innerHTML += `<p>${item.name} - $${item.price}</p>`;
+    total += item.price;
+  });
+
+  document.getElementById("total").innerText = "Total: $" + total;
+</script>
+
+</body>
+</html>

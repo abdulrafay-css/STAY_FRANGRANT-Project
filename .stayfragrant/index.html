@@ -1,62 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Stay Fragrant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
 
-<nav>
-    <div class="logo">STAY FRAGRANT</div>
-    <div class="nav-links">
-        <div class="nav-item">Home
-            <div class="dropdown">
-                      <a href="index.html">Main</a>
-            </div>
-        </div>
+<nav class="navbar">
+    <div class="logo">Stay<span>FRAGRANT</span></div>
 
-        <div class="nav-item">Collection
-            <div class="dropdown">
-                <a href="#">Luxury</a>
-                <a href="#">Daily Wear</a>
-            </div>
-        </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
 
-        <div class="nav-item">Catalog
-            <div class="dropdown">
-                <a href="#">All Perfumes</a>
+        <li class="dropdown">
+            <a href="#">Collection ▾</a>
+            <div class="dropdown-menu">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
             </div>
-        </div>
+        </li>
 
-        <div class="nav-item">Account
-            <div class="dropdown">
-                <a href="login.html">Login</a>
-            </div>
-        </div>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">Cart</a>
+        <a href="login.html" class="login-btn">Login</a>
     </div>
+
+
 </nav>
 
 <section class="hero">
-    <h1>Stay <span>Fragrant</span>, Stay Remembered</h1>
+    <h1>Luxury In Every Drop</h1>
+    <p>Premium fragrances for men & women</p>
+    <a href="collection.html" class="hero-btn">Explore Collection</a>
+
 </section>
 
-<section class="slider">
-    <div class="track">
-        <!-- Products (duplicated for infinite effect) -->
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Midnight Oud</h4><p>$60</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Rose Noir</h4><p>$50</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Ocean Ember</h4><p>$55</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Amber Smoke</h4><p>$65</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Velvet Bloom</h4><p>$48</p></div>
 
-        <!-- duplicate -->
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Midnight Oud</h4><p>$60</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Rose Noir</h4><p>$50</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Ocean Ember</h4><p>$55</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Amber Smoke</h4><p>$65</p></div>
-        <div class="product"><img src="https://via.placeholder.com/220"><h4>Velvet Bloom</h4><p>$48</p></div>
+
+<section class="products">
+    <h2>Featured Scents</h2>
+
+    <div class="slider">
+        <div class="slider-track">
+
+            <!-- ===== ORIGINAL PRODUCTS ===== -->
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?1" alt="Amber Night">
+                <h3>Amber Night</h3>
+                <span>Rs. 1599</span>
+                <hr class="product-line">
+                h<button class="add-cart" onclick="addToCart('Amber Night',120)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?2" alt="Ocean Rush">
+                <h3>Ocean Rush</h3>
+                <span>Rs. 1899</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Ocean Rush',95)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?3" alt="Velvet Oud">
+                <h3>Velvet Oud</h3>
+                <span>Rs. 2299</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Velvet Oud',140)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?4" alt="Golden Wood">
+                <h3>Golden Wood</h3>
+                <span>Rs. 8759</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Golden Wood',110)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?5" alt="Pure Musk">
+                <h3>Pure Musk</h3>
+                <span>Rs. 6549</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Pure Musk',105)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?6" alt="Spice Noir">
+                <h3>Spice Noir</h3>
+                <span>Rs. 4699</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Spice Noir',130)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?7" alt="Fresh Lime">
+                <h3>Fresh Lime</h3>
+                <span>Rs. 3999</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Fresh Lime',85)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?8" alt="Midnight Oud">
+                <h3>Midnight Oud</h3>
+                <span>Rs. 4049</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Midnight Oud',150)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?9" alt="Rose Elixir">
+                <h3>Rose Elixir</h3>
+                <span>Rs. 9399</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Rose Elixir',115)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?10" alt="Velvet Bloom">
+                <h3>Velvet Bloom</h3>
+                <span>Rs. 9849</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Velvet Bloom',100)">Add to Cart</button>
+            </div>
+
+
+            <!-- ===== DUPLICATED PRODUCTS FOR SMOOTH LOOP ===== -->
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?1" alt="Amber Night">
+                <h3>Amber Night</h3>
+                <span>Rs. 1599</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Amber Night',120)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?2" alt="Ocean Rush">
+                <h3>Ocean Rush</h3>
+                <span>Rs. 1899</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Ocean Rush',95)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?3" alt="Velvet Oud">
+                <h3>Velvet Oud</h3>
+                <span>Rs. 2299</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Velvet Oud',140)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?4" alt="Golden Wood">
+                <h3>Golden Wood</h3>
+                <span>Rs. 8759</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Golden Wood',110)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?5" alt="Pure Musk">
+                <h3>Pure Musk</h3>
+                <span>Rs. 6549</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Pure Musk',105)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?6" alt="Spice Noir">
+                <h3>Spice Noir</h3>
+                <span>Rs. 4699</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Spice Noir',130)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?7" alt="Fresh Lime">
+                <h3>Fresh Lime</h3>
+                <span>Rs. 3999</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Fresh Lime',85)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?8" alt="Midnight Oud">
+                <h3>Midnight Oud</h3>
+                <span>Rs. 4049</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Midnight Oud',150)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?9" alt="Rose Elixir">
+                <h3>Rose Elixir</h3>
+                <span>Rs. 9399</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Rose Elixir',115)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/300/300?10" alt="Velvet Bloom">
+                <h3>Velvet Bloom</h3>
+                <span>Rs. 9849</span>
+                <hr class="product-line">
+                <button class="add-cart" onclick="addToCart('Velvet Bloom',100)">Add to Cart</button>
+            </div>
+
+        </div>
     </div>
 </section>
+
+
+
+<footer>
+    <p>Contact: abdulrafay1css@gmail.com</p>
+    <p>Rafay  •  Shimaas  •  Ahsan</p>
+</footer>
 
 </body>
 </html>
