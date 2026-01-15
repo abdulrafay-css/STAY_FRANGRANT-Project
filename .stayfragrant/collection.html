@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Collection | Stay Fragrant</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,10 @@
     <li><a href="about.html">About</a></li>
   </ul>
 
-  <a href="login.html" class="login-btn">Login</a>
+  <div class="nav-actions">
+    <a href="cart.html" class="cart-btn">Cart</a>
+    <a href="login.html" class="login-btn">Login</a>
+  </div>
 </nav>
 
 <section class="products">
@@ -33,129 +37,128 @@
 
   <div class="collection-grid">
 
-    <!-- Product 1 -->
+    <!-- Row 1 -->
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?1" alt="Amber Night">
+      <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=300&h=300&fit=crop" alt="Amber Night">
       <h3>Amber Night</h3>
       <span>Rs. 1599</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Amber Night',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Amber Night',1599)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?2" alt="Ocean Rush">
+      <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=300&h=300&fit=crop" alt="Ocean Rush">
       <h3>Ocean Rush</h3>
       <span>Rs. 1899</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Ocean Rush',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Ocean Rush',1899)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?3" alt="Velvet Oud">
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=300&h=300&fit=crop" alt="Velvet Oud">
       <h3>Velvet Oud</h3>
       <span>Rs. 2299</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Velvet Oud',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Velvet Oud',2299)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?4" alt="Golden Wood">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=300&h=300&fit=crop" alt="Golden Wood">
       <h3>Golden Wood</h3>
       <span>Rs. 8759</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Golden Wood',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Golden Wood',8759)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?5" alt="Pure Musk">
+      <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=300&h=300&fit=crop" alt="Pure Musk">
       <h3>Pure Musk</h3>
       <span>Rs. 6549</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Pure Musk',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Pure Musk',6549)">Add to Cart</button>
     </div>
 
 
     <!-- Row 2 -->
-
-
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?6" alt="Spice Noir">
+      <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=300&h=300&fit=crop" alt="Spice Noir">
       <h3>Spice Noir</h3>
       <span>Rs. 4699</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Spice Noir',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Spice Noir',4699)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?7" alt="Fresh Lime">
-      <h3>Fresh LIme</h3>
+      <img src="https://images.unsplash.com/photo-1590156206916-69a00ad6f769?w=300&h=300&fit=crop" alt="Fresh Lime">
+      <h3>Fresh Lime</h3>
       <span>Rs. 3999</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Fresh Lime',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Fresh Lime',3999)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?8" alt="Midnight Oud">
+      <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=300&h=300&fit=crop" alt="Midnight Oud">
       <h3>Midnight Oud</h3>
       <span>Rs. 4049</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Midnight Oud',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Midnight Oud',4049)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?9" alt="Rose Elixir">
+      <img src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?w=300&h=300&fit=crop" alt="Rose Elixir">
       <h3>Rose Elixir</h3>
       <span>Rs. 9399</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Rose Elixir',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Rose Elixir',9399)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?10" alt="Velvet Bloom">
+      <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=300&h=300&fit=crop" alt="Velvet Bloom">
       <h3>Velvet Bloom</h3>
       <span>Rs. 9849</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Velvet Bloom',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Velvet Bloom',9849)">Add to Cart</button>
     </div>
 
+    <!-- Row 3 -->
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?11" alt="Dark Leather">
+      <img src="https://images.unsplash.com/photo-1595786223248-f9ffc2738a53?w=300&h=300&fit=crop" alt="Dark Leather">
       <h3>Dark Leather</h3>
       <span>Rs. 9379</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Dark Leather',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Dark Leather',9379)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?12" alt="Ocean Storm">
+      <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=300&h=300&fit=crop" alt="Ocean Storm">
       <h3>Ocean Storm</h3>
       <span>Rs. 9569</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Ocean Storm',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Ocean Storm',9569)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?21" alt="Rose Bloom">
+      <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59db9?w=300&h=300&fit=crop" alt="Rose Bloom">
       <h3>Rose Bloom</h3>
       <span>Rs. 8649</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Rose Bloom',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Rose Bloom',8649)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?22" alt="Vanilla Sky">
+      <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=300&h=300&fit=crop" alt="Vanilla Sky">
       <h3>Vanilla Sky</h3>
       <span>Rs. 3499</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Vanilla Sky',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Vanilla Sky',3499)">Add to Cart</button>
     </div>
 
     <div class="product-card">
-      <img src="https://picsum.photos/300/300?1" alt="Golden Peony">
+      <img src="https://images.unsplash.com/photo-1610456990809-b1e2d5c89548?w=300&h=300&fit=crop" alt="Golden Peony">
       <h3>Golden Peony</h3>
       <span>Rs. 5599</span>
       <hr class="product-line">
-      <button class="add-cart" onclick="addToCart('Golden Peony',120)">Add to Cart</button>
+      <button class="add-cart" onclick="addToCart('Golden Peony',5599)">Add to Cart</button>
     </div>
 
   </div>

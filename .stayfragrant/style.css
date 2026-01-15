@@ -6,6 +6,7 @@ body {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 *{
     margin:0;
     padding:0;
@@ -19,6 +20,7 @@ body{
 }
 
 /* NAVBAR */
+
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -163,13 +165,16 @@ body{
 }
 
 /* FOOTER */
+
 footer{
     text-align:center;
     padding:40px;
     background:#000;
     margin-top:60px;
 }
+
 /* LOGIN PAGE */
+
 .login-page {
     height: 100vh;
     display: flex;
@@ -211,7 +216,9 @@ footer{
     text-decoration: none;
     font-weight: 600;
 }
-/* SLIDER */
+
+/*   SLIDER   */
+
 .slider {
     overflow: visible;
     width: 100%;
@@ -260,7 +267,7 @@ footer{
     }
 }
 
-/* CART BUTTON */
+/*   CART BUTTON   */
 
 .add-cart{
     margin-top:15px;
@@ -291,7 +298,7 @@ footer{
     transition: 0.3s;
 }
 
-/* CART & LOGIN ALLIGNMENT */
+/*   CART & LOGIN ALLIGNMENT   */
 
 .add-cart:hover{
     background:#ffaa33;
@@ -312,6 +319,7 @@ footer{
 }
 
 /* ABOUT PAGE */
+
 .about-page {
     padding: 120px 8%;
     color: white;
