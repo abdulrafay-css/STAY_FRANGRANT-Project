@@ -1,6 +1,5 @@
-/* ===============================
-   NAVBAR GLOW ON SCROLL
-================================ */
+/*   NAVBAR GLOW   */
+
 window.addEventListener("scroll", () => {
     const nav = document.querySelector(".navbar");
     if (!nav) return;
@@ -12,9 +11,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-/* ===============================
-   BUTTON GLOW
-================================ */
+/*   BUTTON GLOW   */
 document.querySelectorAll(".login-btn, .hero-btn").forEach(btn => {
     btn.addEventListener("mouseenter", () => {
         btn.style.boxShadow = "0 0 20px #ff8c00";
@@ -24,9 +21,8 @@ document.querySelectorAll(".login-btn, .hero-btn").forEach(btn => {
     });
 });
 
-/* ===============================
-   PRODUCT 3D HOVER
-================================ */
+/*    PRODUCT 3D HOVER    */
+
 document.querySelectorAll(".product-card").forEach(card => {
     card.addEventListener("mousemove", e => {
         const x = e.offsetX;
@@ -45,9 +41,8 @@ document.querySelectorAll(".product-card").forEach(card => {
     });
 });
 
-/* ===============================
-   DROPDOWN FADE
-================================ */
+/*     DROPDOWN FADE    */
+
 document.querySelectorAll(".dropdown").forEach(menu => {
     const drop = menu.querySelector(".dropdown-menu");
     if (!drop) return;
@@ -64,9 +59,8 @@ document.querySelectorAll(".dropdown").forEach(menu => {
     });
 });
 
-/* ===============================
-   TRUE INFINITE SLIDER (NO STUTTER)
-================================ */
+/*    INFINITE SLIDER (NO STUTTER)    */
+
 const slider = document.querySelector(".slider-inner");
 const track = document.querySelector(".slider-track");
 
@@ -94,6 +88,7 @@ if (slider && track) {
 
     loop();
 }
+
 /* CART */
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];

@@ -311,6 +311,121 @@ footer{
     font-weight: 600;
 }
 
+/* ABOUT PAGE */
+.about-page {
+    padding: 120px 8%;
+    color: white;
+    text-align: center;
+}
+
+.about-page h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 60px;
+}
+
+.about-section {
+    margin-bottom: 80px;
+}
+
+.about-section h2 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+    color: #ccc;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background: #111;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-color: orange;
+}
+
+.team-card h3 {
+    color: white;
+}
+
+.team-card span {
+    color: #aaa;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: #0a0a0a;
+    color: #aaa;
+    padding: 60px 8% 30px;
+    margin-top: 100px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.footer-grid h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.footer-grid a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-grid a:hover {
+    color: orange;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    margin-left: 20px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: orange;
+}
+
+
 
 
 
