@@ -15,14 +15,14 @@ body {
 }
 
 body{
-    background:#0b0b0b;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #2b2b2b );
     color:white;
 }
 
 /* NAVBAR */
 
 .navbar{
-    display:flex;
+    display: flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 60px;
@@ -87,10 +87,15 @@ body{
     border-radius:25px;
     text-decoration:none;
     color:black;
-    font-weight:600;
+    font-weight:800;
 }
 
 /* HERO */
+
+.hero span{
+    color:#ff8c00;
+}
+
 .hero{
     height:80vh;
     display:flex;
@@ -291,7 +296,7 @@ footer{
     width: 100%;
     padding: 10px;
     border-radius: 20px;
-    border: none;
+    border: orange 1px solid;
     background: #ff8c00;
     font-weight: 600;
     cursor: pointer;
